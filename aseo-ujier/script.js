@@ -36,7 +36,6 @@ document.getElementById('showAseoDom2').onclick = function() {
 document.getElementById('Enviar').onclick = function Enviar() {
 	var form = document.getElementById('form')
 	if (!form.checkValidity()) {
-		alert('completa el formulario mi soo')
 		return
 	}
 	//Fecha del Martes, Jueves, Sabado y domingo
@@ -65,28 +64,24 @@ document.getElementById('Enviar').onclick = function Enviar() {
 		var siAseoMar2 = '%0A-%20'+aseoMar2
 	} else {
 		document.getElementById('aseoMar2').removeAttribute('name')
-		var siAseoMar2 = ''
 	}
 	if (document.getElementById('aseoJue2').value !== '') {
 		var aseoJue2 = document.getElementById('aseoJue2').value
 		var siAseoJue2 = '%0A-%20'+aseoJue2
 	} else {
 		document.getElementById('aseoJue2').removeAttribute('name')
-		var siAseoJue2 = ''
 	}
 	if (document.getElementById('aseoSab2').value !== '') {
 		var aseoSab2 = document.getElementById('aseoSab2').value
 		var siAseoSab2 = '%0A-%20'+aseoSab2
 	} else {
 		document.getElementById('aseoSab2').removeAttribute('name')
-		var siAseoSab2 = ''
 	}
 	if (document.getElementById('aseoDom2').value !== '') {
 		var aseoDom2 = document.getElementById('aseoDom2').value
 		var siAseoDom2 = '%0A-%20'+aseoDom2
 	} else {
 		document.getElementById('aseoDom2').removeAttribute('name')
-		var siAseoDom2 = ''
 	}
 	
 	//Ujier
