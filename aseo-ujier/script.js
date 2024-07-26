@@ -60,25 +60,33 @@ document.getElementById('Enviar').onclick = function Enviar() {
 	var aseoDom = document.getElementById('aseoDom').value
 
 	// Aseo Campus 2
-	if (window.getComputedStyle(document.getElementById('aseoMar2')).display !== 'inline-block') {
-		document.getElementById('aseoMar2').removeAttribute('name')
-	} else {
+	if (document.getElementById('aseoMar2').value !== '') {
 		var aseoMar2 = document.getElementById('aseoMar2').value
-	}
-	if (window.getComputedStyle(document.getElementById('aseoJue2')).display !== 'inline-block') {
-		document.getElementById('aseoJue2').removeAttribute('name')
+		var siAseoMar2 = '%0A-%20'+aseoMar2
 	} else {
+		document.getElementById('aseoMar2').removeAttribute('name')
+		var siAseoMar2 = ''
+	}
+	if (document.getElementById('aseoJue2').value !== '') {
 		var aseoJue2 = document.getElementById('aseoJue2').value
+		var siAseoJue2 = '%0A-%20'+aseoJue2
+	} else {
+		document.getElementById('aseoJue2').removeAttribute('name')
+		var siAseoJue2 = ''
 	}
-	if (window.getComputedStyle(document.getElementById('aseoSab2')).display !== 'inline-block') {
+	if (document.getElementById('aseoSab2').value !== '') {
+		var aseoSab2 = document.getElementById('aseoSab2').value
+		var siAseoSab2 = '%0A-%20'+aseoSab2
+	} else {
 		document.getElementById('aseoSab2').removeAttribute('name')
-	} else {
-		var aseoSab2 = document.getElementById('aseoSab2').value;
+		var siAseoSab2 = ''
 	}
-	if (window.getComputedStyle(document.getElementById('aseoDom2')).display !== 'inline-block') {
-		document.getElementById('aseoDom2').removeAttribute('name')
-	} else {
+	if (document.getElementById('aseoDom2').value !== '') {
 		var aseoDom2 = document.getElementById('aseoDom2').value
+		var siAseoDom2 = '%0A-%20'+aseoDom2
+	} else {
+		document.getElementById('aseoDom2').removeAttribute('name')
+		var siAseoDom2 = ''
 	}
 	
 	//Ujier
@@ -88,25 +96,5 @@ document.getElementById('Enviar').onclick = function Enviar() {
 	var ujierDom = document.getElementById('ujierDom').value
 
 	// Enviar
-	if (aseoMar2 !== '') {
-		var siAseoMar2 = '%0A-%20'+aseoMar2;
-	} else {
-		var siAseoMar2 = ''
-	}
-	if (aseoJue2 !== '') {
-		var siAseoJue2 = '%0A-%20'+aseoJue2
-	} else {
-		var siAseoJue2 = ''
-	}
-	if (aseoSab2 !== '') {
-		var siAseoSab2 = '%0A-%20'+aseoSab2
-	} else {
-		var siAseoSab2 = ''
-	}
-	if (aseoDom2 !== '') {
-		var siAseoDom2 = '%0A-%20'+aseoDom2
-	} else {
-		var siAseoDom2 = ''
-	}
 	window.open('https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A`Para%20los%20d%C3%ADas:`%0A-%20Martes%20'+dayMar+'%0A-%20Jueves%20'+dayJue+'%0A-%20S%C3%A1bado%20'+daySab+'%0A-%20Domingo%20'+dayDom+'%0A%0A`Aseo:`%0A-%20*Mar.*%20'+aseoMar+siAseoMar2+'%0A-%20*Jue.*%20'+aseoJue+siAseoJue2+'%0A-%20*S%C3%A1b.*%20'+aseoSab+siAseoSab2+'%0A-%20*Dom.*%20'+aseoDom+siAseoDom2+'%0A%0A`Ujier:`%0A-%20*Mar.*%20'+ujierMar+'%0A-%20*Jue.*%20'+ujierJue+'%0A-%20*S%C3%A1b.*%20'+ujierSab+'%0A-%20*Dom.*%20'+ujierDom)
 }
