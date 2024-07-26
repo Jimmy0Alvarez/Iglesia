@@ -29,7 +29,7 @@ document.getElementById('Enviar').onclick = function() {
 
 	//Aseo
 	var aseoMar = document.getElementById('aseoMar').value;
-	if (document.getElementById('aseoMar2').hasAttribute('disabled')) {
+	if (window.getComputedStyle(document.getElementById('aseoMar2')).display === 'inline-block') {
 		document.getElementById('aseoMar2').removeAttribute('name');
 	} else {
 		var aseoMar2 = document.getElementById('aseoMar2').value;
