@@ -31,6 +31,39 @@ document.getElementById('showAseoDom2').onclick = function() {
 		document.getElementById('showAseoDom2').style.display = "inline-block"
 	}
 }
+// Botones de Ujier
+document.getElementById('showUjierMar2').onclick = function() {
+	document.getElementById('content-ujierMar2').style.display = 'inline-block'
+	document.getElementById('showUjierMar2').style.display = "none";
+	document.getElementById('hiddenUjierMar2').onclick = function () {
+		document.getElementById('content-ujierMar2').style.display = "none"
+		document.getElementById('showUjierMar2').style.display = "inline-block"
+	}
+}
+document.getElementById('showUjierJue2').onclick = function() {
+	document.getElementById('content-ujierJue2').style.display = 'inline-block'
+	document.getElementById('showUjierJue2').style.display = "none"
+	document.getElementById('hiddenUjierJue2').onclick = function () {
+		document.getElementById('content-ujierJue2').style.display = "none";
+		document.getElementById('showUjierJue2').style.display = "inline-block"
+	}
+}
+document.getElementById('showUjierSab2').onclick = function() {
+	document.getElementById('content-ujierSab2').style.display = 'inline-block'
+	document.getElementById('showUjierSab2').style.display = "none"
+	document.getElementById('hiddenUjierSab2').onclick = function () {
+		document.getElementById('content-ujierSab2').style.display = "none"
+		document.getElementById('showUjierSab2').style.display = "inline-block"
+	}
+}
+document.getElementById('showUjierDom2').onclick = function() {
+	document.getElementById('content-ujierDom2').style.display = 'inline-block'
+	document.getElementById('showUjierDom2').style.display = "none"
+	document.getElementById('hiddenUjierDom2').onclick = function () {
+		document.getElementById('content-ujierDom2').style.display = "none"
+		document.getElementById('showUjierDom2').style.display = "inline-block"
+	}
+}
 
 // Función Enviar
 document.getElementById('Enviar').onclick = function Enviar() {
@@ -88,12 +121,42 @@ document.getElementById('Enviar').onclick = function Enviar() {
 		var siAseoDom2 = ''
 	}
 	
-	//Ujier
+	//Ujier Campus 1
 	var ujierMar = document.getElementById('ujierMar').value
 	var ujierJue = document.getElementById('ujierJue').value
 	var ujierSab = document.getElementById('ujierSab').value
 	var ujierDom = document.getElementById('ujierDom').value
 
+	// Ujier Campus 2
+	if (document.getElementById('ujierMar2').value !== '') {
+		var ujierMar2 = document.getElementById('ujierMar2').value
+		var siUjierMar2 = '%0A-%20'+ujierMar2
+	} else {
+		document.getElementById('ujierMar2').removeAttribute('name')
+		var siUjierMar2 = ''
+	}
+	if (document.getElementById('ujierJue2').value !== '') {
+		var ujierJue2 = document.getElementById('aujierue2').value
+		var siUjierJue2 = '%0A-%20'+ujierJue2
+	} else {
+		document.getElementById('ujierJue2').removeAttribute('name')
+		var siUjierJue2 = ''
+	}
+	if (document.getElementById('ujierSab2').value !== '') {
+		var ujierSab2 = document.getElementById('ujierSab2').value
+		var siUjierSab2 = '%0A-%20'+ujierSab2
+	} else {
+		document.getElementById('ujierSab2').removeAttribute('name')
+		var siUjierSab2 = ''
+	}
+	if (document.getElementById('ujierDom2').value !== '') {
+		var ujierDom2 = document.getElementById('ujierDom2').value
+		var siUjierDom2 = '%0A-%20'+ujierDom2
+	} else {
+		document.getElementById('ujierDom2').removeAttribute('name')
+		var siUjierDom2 = ''
+	}
+	
 	// Enviar
-	window.open('https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A`Para%20los%20d%C3%ADas:`%0A-%20Martes%20'+dayMar+'%0A-%20Jueves%20'+dayJue+'%0A-%20S%C3%A1bado%20'+daySab+'%0A-%20Domingo%20'+dayDom+'%0A%0A`Aseo:`%0A-%20*Mar.*%20'+aseoMar+siAseoMar2+'%0A-%20*Jue.*%20'+aseoJue+siAseoJue2+'%0A-%20*S%C3%A1b.*%20'+aseoSab+siAseoSab2+'%0A-%20*Dom.*%20'+aseoDom+siAseoDom2+'%0A%0A`Ujier:`%0A-%20*Mar.*%20'+ujierMar+'%0A-%20*Jue.*%20'+ujierJue+'%0A-%20*S%C3%A1b.*%20'+ujierSab+'%0A-%20*Dom.*%20'+ujierDom)
+	window.open('https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A`Para%20los%20d%C3%ADas:`%0A-%20Martes%20'+dayMar+'%0A-%20Jueves%20'+dayJue+'%0A-%20S%C3%A1bado%20'+daySab+'%0A-%20Domingo%20'+dayDom+'%0A%0A`Aseo:`%0A-%20*Mar.*%20'+aseoMar+siAseoMar2+'%0A-%20*Jue.*%20'+aseoJue+siAseoJue2+'%0A-%20*S%C3%A1b.*%20'+aseoSab+siAseoSab2+'%0A-%20*Dom.*%20'+aseoDom+siAseoDom2+'%0A%0A`Ujier:`%0A-%20*Mar.*%20'+ujierMar+siUjierMar2+'%0A-%20*Jue.*%20'+ujierJue+siUjierJue2+'%0A-%20*S%C3%A1b.*%20'+ujierSab+siUjierSab2+'%0A-%20*Dom.*%20'+ujierDom+siUjierDom2)
 }
