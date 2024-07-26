@@ -33,7 +33,11 @@ document.getElementById('showAseoDom2').onclick = function() {
 }
 
 // Función Enviar
-document.getElementById('Enviar').onclick = function() {
+document.getElementById('Enviar').onclick = function Enviar() {
+	var form = document.getElementById('form')
+	if (!form.checkValidity()) {
+		alert('completa el formulario mi soo')
+	}
 	//Fecha del Martes, Jueves, Sabado y domingo
 	var dateMartes = document.getElementById('dateMar').value
 	var dateMart = new Date(dateMartes)
