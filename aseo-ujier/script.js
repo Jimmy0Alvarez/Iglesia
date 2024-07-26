@@ -37,6 +37,7 @@ document.getElementById('Enviar').onclick = function Enviar() {
 	var form = document.getElementById('form')
 	if (!form.checkValidity()) {
 		alert('completa el formulario mi soo')
+		return
 	}
 	//Fecha del Martes, Jueves, Sabado y domingo
 	var dateMartes = document.getElementById('dateMar').value
