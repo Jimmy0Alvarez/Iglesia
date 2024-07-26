@@ -69,6 +69,7 @@ document.getElementById('showUjierDom2').onclick = function() {
 document.getElementById('Enviar').onclick = function Enviar() {
 	var form = document.getElementById('form')
 	if (!form.checkValidity()) {
+		console.log(form)
 		return
 	}
 	//Fecha del Martes, Jueves, Sabado y domingo
