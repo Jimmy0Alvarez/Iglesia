@@ -83,22 +83,22 @@ document.getElementById('Enviar').onclick = function() {
 	var ujierDom = document.getElementById('ujierDom').value
 
 	// Enviar
-	if (aseoMar2) {
+	if (aseoMar2 !== '') {
 		var siAseoMar2 = '%0A-%20'+aseoMar2;
 	} else {
 		var siAseoMar2 = ''
 	}
-	if (aseoJue2) {
+	if (aseoJue2 !== '') {
 		var siAseoJue2 = '%0A-%20'+aseoJue2
 	} else {
 		var siAseoJue2 = ''
 	}
-	if (aseoSab2) {
+	if (aseoSab2 !== '') {
 		var siAseoSab2 = '%0A-%20'+aseoSab2
 	} else {
 		var siAseoSab2 = ''
 	}
-	if (aseoDom2) {
+	if (aseoDom2 !== '') {
 		var siAseoDom2 = '%0A-%20'+aseoDom2
 	} else {
 		var siAseoDom2 = ''
