@@ -66,12 +66,13 @@ document.getElementById('showUjierDom2').onclick = function() {
 }
 
 // Función Enviar
-document.getElementById('Enviar').onclick = function Enviar() {
+document.getElementById('Enviar').onclick = function (){
 	var form = document.getElementById('form')
-	if (!form.checkValidity()) {
-		console.log(form)
-		return
+	if (form.checkValidity()) {
+		enviarAhora()
 	}
+}
+function enviarAhora() {
 	//Fecha del Martes, Jueves, Sabado y domingo
 	var dateMartes = document.getElementById('dateMar').value
 	var dateMart = new Date(dateMartes)
