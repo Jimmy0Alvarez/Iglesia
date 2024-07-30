@@ -1,66 +1,82 @@
 // Botones de Aseo
 document.getElementById('showAseoMar2').onclick = function() {
 	document.getElementById('content-aseoMar2').style.display = 'inline-block'
+	document.getElementById('aseoMar2').required = true
 	document.getElementById('showAseoMar2').style.display = "none";
 	document.getElementById('hiddenAseoMar2').onclick = function () {
 		document.getElementById('content-aseoMar2').style.display = "none"
+		document.getElementById('aseoMar2').required = false
 		document.getElementById('showAseoMar2').style.display = "inline-block"
 	}
 }
 document.getElementById('showAseoJue2').onclick = function() {
 	document.getElementById('content-aseoJue2').style.display = 'inline-block'
+	document.getElementById('aseoJue2').required = true
 	document.getElementById('showAseoJue2').style.display = "none"
 	document.getElementById('hiddenAseoJue2').onclick = function () {
 		document.getElementById('content-aseoJue2').style.display = "none";
+		document.getElementById('aseoJue2').required = false
 		document.getElementById('showAseoJue2').style.display = "inline-block"
 	}
 }
 document.getElementById('showAseoSab2').onclick = function() {
 	document.getElementById('content-aseoSab2').style.display = 'inline-block'
+	document.getElementById('aseoSab2').required = true
 	document.getElementById('showAseoSab2').style.display = "none"
 	document.getElementById('hiddenAseoSab2').onclick = function () {
 		document.getElementById('content-aseoSab2').style.display = "none"
+		document.getElementById('aseoSab2').required = false
 		document.getElementById('showAseoSab2').style.display = "inline-block"
 	}
 }
 document.getElementById('showAseoDom2').onclick = function() {
 	document.getElementById('content-aseoDom2').style.display = 'inline-block'
+	document.getElementById('aseoDom2').required = true
 	document.getElementById('showAseoDom2').style.display = "none"
 	document.getElementById('hiddenAseoDom2').onclick = function () {
 		document.getElementById('content-aseoDom2').style.display = "none"
+		document.getElementById('aseoDom2').required = false
 		document.getElementById('showAseoDom2').style.display = "inline-block"
 	}
 }
 // Botones de Ujier
 document.getElementById('showUjierMar2').onclick = function() {
 	document.getElementById('content-ujierMar2').style.display = 'inline-block'
+	document.getElementById('aseoMar2').required = true
 	document.getElementById('showUjierMar2').style.display = "none";
 	document.getElementById('hiddenUjierMar2').onclick = function () {
 		document.getElementById('content-ujierMar2').style.display = "none"
+		document.getElementById('aseoMar2').required = false
 		document.getElementById('showUjierMar2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierJue2').onclick = function() {
 	document.getElementById('content-ujierJue2').style.display = 'inline-block'
+	document.getElementById('aseoJue2').required = true
 	document.getElementById('showUjierJue2').style.display = "none"
 	document.getElementById('hiddenUjierJue2').onclick = function () {
 		document.getElementById('content-ujierJue2').style.display = "none";
+		document.getElementById('aseoJue2').required = false
 		document.getElementById('showUjierJue2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierSab2').onclick = function() {
 	document.getElementById('content-ujierSab2').style.display = 'inline-block'
+	document.getElementById('aseoSab2').required = true
 	document.getElementById('showUjierSab2').style.display = "none"
 	document.getElementById('hiddenUjierSab2').onclick = function () {
 		document.getElementById('content-ujierSab2').style.display = "none"
+		document.getElementById('aseoSab2').required = false
 		document.getElementById('showUjierSab2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierDom2').onclick = function() {
 	document.getElementById('content-ujierDom2').style.display = 'inline-block'
+	document.getElementById('aseoDom2').required = true
 	document.getElementById('showUjierDom2').style.display = "none"
 	document.getElementById('hiddenUjierDom2').onclick = function () {
 		document.getElementById('content-ujierDom2').style.display = "none"
+		document.getElementById('aseoDom2').required = false
 		document.getElementById('showUjierDom2').style.display = "inline-block"
 	}
 }
@@ -154,5 +170,7 @@ document.getElementById('enviar').onclick = function() {
 	}
 	
 	// Enviar
-	window.open('https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A`Para%20los%20d%C3%ADas:`%0A-%20Martes%20'+dayMar+'%0A-%20Jueves%20'+dayJue+'%0A-%20S%C3%A1bado%20'+daySab+'%0A-%20Domingo%20'+dayDom+'%0A%0A`Aseo:`%0A-%20*Mar.*%20'+aseoMar+siAseoMar2+'%0A-%20*Jue.*%20'+aseoJue+siAseoJue2+'%0A-%20*S%C3%A1b.*%20'+aseoSab+siAseoSab2+'%0A-%20*Dom.*%20'+aseoDom+siAseoDom2+'%0A%0A`Ujier:`%0A-%20*Mar.*%20'+ujierMar+siUjierMar2+'%0A-%20*Jue.*%20'+ujierJue+siUjierJue2+'%0A-%20*S%C3%A1b.*%20'+ujierSab+siUjierSab2+'%0A-%20*Dom.*%20'+ujierDom+siUjierDom2)
+	if (document.getElementById('form').checkValidity()) {
+		window.open('https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A`Para%20los%20d%C3%ADas:`%0A-%20Martes%20'+dayMar+'%0A-%20Jueves%20'+dayJue+'%0A-%20S%C3%A1bado%20'+daySab+'%0A-%20Domingo%20'+dayDom+'%0A%0A`Aseo:`%0A-%20*Mar.*%20'+aseoMar+siAseoMar2+'%0A-%20*Jue.*%20'+aseoJue+siAseoJue2+'%0A-%20*S%C3%A1b.*%20'+aseoSab+siAseoSab2+'%0A-%20*Dom.*%20'+aseoDom+siAseoDom2+'%0A%0A`Ujier:`%0A-%20*Mar.*%20'+ujierMar+siUjierMar2+'%0A-%20*Jue.*%20'+ujierJue+siUjierJue2+'%0A-%20*S%C3%A1b.*%20'+ujierSab+siUjierSab2+'%0A-%20*Dom.*%20'+ujierDom+siUjierDom2)
+	}
 }
