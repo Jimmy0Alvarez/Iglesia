@@ -82,7 +82,7 @@ document.getElementById('showUjierDom2').onclick = function() {
 }
 
 // Función Enviar
-document.getElementById('enviar').addEventListener('onclick', function(event) {
+document.getElementById('enviar').addEventListener('onclick', function() {
 	//Fecha del Martes, Jueves, Sabado y domingo
 	var dateMartes = document.getElementById('dateMar').value
 	var dateMart = new Date(dateMartes)
