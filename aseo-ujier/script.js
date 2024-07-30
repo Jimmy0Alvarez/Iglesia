@@ -88,7 +88,7 @@ document.getElementById('enviar').onclick = function() {
 	var aseoDom = document.getElementById('aseoDom').value
 
 	// Aseo Campus 2
-	if (document.getElementById('aseoMar2').value !== '' || document.getElementById('aseoMar2').style.display == 'none'){
+	if (document.getElementById('aseoMar2').value !== '' && document.getElementById('aseoMar2').style.display == 'inline-block'){
 		var aseoMar2 = document.getElementById('aseoMar2').value
 		var siAseoMar2 = '%0A-%20'+aseoMar2
 	} else {
