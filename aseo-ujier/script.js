@@ -42,41 +42,41 @@ document.getElementById('showAseoDom2').onclick = function() {
 // Botones de Ujier
 document.getElementById('showUjierMar2').onclick = function() {
 	document.getElementById('content-ujierMar2').style.display = 'inline-block'
-	document.getElementById('aseoMar2').required = true
+	document.getElementById('ujierMar2').required = true
 	document.getElementById('showUjierMar2').style.display = "none";
 	document.getElementById('hiddenUjierMar2').onclick = function () {
 		document.getElementById('content-ujierMar2').style.display = "none"
-		document.getElementById('aseoMar2').required = false
+		document.getElementById('ujierMar2').required = false
 		document.getElementById('showUjierMar2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierJue2').onclick = function() {
 	document.getElementById('content-ujierJue2').style.display = 'inline-block'
-	document.getElementById('aseoJue2').required = true
+	document.getElementById('ujierJue2').required = true
 	document.getElementById('showUjierJue2').style.display = "none"
 	document.getElementById('hiddenUjierJue2').onclick = function () {
 		document.getElementById('content-ujierJue2').style.display = "none";
-		document.getElementById('aseoJue2').required = false
+		document.getElementById('ujierJue2').required = false
 		document.getElementById('showUjierJue2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierSab2').onclick = function() {
 	document.getElementById('content-ujierSab2').style.display = 'inline-block'
-	document.getElementById('aseoSab2').required = true
+	document.getElementById('ujierSab2').required = true
 	document.getElementById('showUjierSab2').style.display = "none"
 	document.getElementById('hiddenUjierSab2').onclick = function () {
 		document.getElementById('content-ujierSab2').style.display = "none"
-		document.getElementById('aseoSab2').required = false
+		document.getElementById('ujierSab2').required = false
 		document.getElementById('showUjierSab2').style.display = "inline-block"
 	}
 }
 document.getElementById('showUjierDom2').onclick = function() {
 	document.getElementById('content-ujierDom2').style.display = 'inline-block'
-	document.getElementById('aseoDom2').required = true
+	document.getElementById('ujierDom2').required = true
 	document.getElementById('showUjierDom2').style.display = "none"
 	document.getElementById('hiddenUjierDom2').onclick = function () {
 		document.getElementById('content-ujierDom2').style.display = "none"
-		document.getElementById('aseoDom2').required = false
+		document.getElementById('ujierDom2').required = false
 		document.getElementById('showUjierDom2').style.display = "inline-block"
 	}
 }
