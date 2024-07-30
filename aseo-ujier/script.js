@@ -170,7 +170,7 @@ document.getElementById('enviar').addEventListener('onclick', function() {
 	}
 	
 	// Enviar
-	if (document.getElementById('form').checkValidity()) {
+	if (document.getElementById('form').reportValidity()) {
 		enviarAhora()
 	}else {
 		alert('completa los campos')
