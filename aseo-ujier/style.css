@@ -2,9 +2,12 @@ html {
 	box-sizing: border-box;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 body {
 	margin: 0;
+	user-select: none;
 }
+
 h1 {
 	font-size: 30px;
 	text-align: center;
@@ -16,9 +19,11 @@ h1 {
 	padding: 9px 0;
 	background: #e4f3fd;
 }
+
 .section-content {
 	margin: 15px;
 }
+
 .content-input {
 	margin: 10px;
 	font-size: larger;
@@ -26,6 +31,7 @@ h1 {
 	font-style: italic;
 	color: #051738;
 }
+
 input[type="date"] {
 	width: 180px;
 	padding: 8px;
@@ -39,15 +45,18 @@ input[type="date"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+
 input[type="date"]:focus {
 	border-color: #66afe9;
 	outline: none;
 	box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
+
 .content-btn-enviar{
 	margin-top: 20px;
 	text-align: center;
 }
+
 .btn-enviar{
 	width: 200px;
 	color: #fff;
@@ -59,10 +68,12 @@ input[type="date"]:focus {
 	border: 0;
 	border-radius: 5px;
 }
+
 .btn-enviar:active {
 	background: #5ab4f8;
 	box-shadow: 0 0 10px #4f94c9;
 }
+
 select {
 	width: 200px; /* Ancho del select */
 	padding: 8px; /* Relleno interno */
@@ -77,14 +88,17 @@ select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+
 select:focus {
 	border-color: #66afe9;
 	box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
+
 .content-2 {
 	margin-top: 5px;
 	display: none;
 }
+
 .btn-show, .btn-hidden {
 	width: 35px;
 	font-size: 23px;
@@ -92,6 +106,7 @@ select:focus {
 	border: 1px solid #1e6299;
 	box-shadow: 0 0 2px 0.1px #1e6299;
 }
+
 .btn-show:active, .btn-hidden:active {
 	background-color: #81b2e9;
 	box-shadow: 0 0 3px 0.3px #1e6299;
