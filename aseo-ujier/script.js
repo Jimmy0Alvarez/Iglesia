@@ -1,5 +1,8 @@
-const showAseoButton = ['Mar', 'Jue', 'Sab', 'Dom'];
-showAseoButton.forEach(day => (
+// Constante Con Array de Los Días De Servicio
+const showButton = ['Mar', 'Jue', 'Sab', 'Dom'];
+
+// Botones Mostar Campus De Aseo
+showButton.forEach(day => {
 	document.getElementById(`showAseo${day}2`).onclick = () => {
 		document.getElementById(`showAseo${day}2`).style.display = 'none';
 		document.getElementById(`aseo${day}2`).required = true;
@@ -8,93 +11,23 @@ showAseoButton.forEach(day => (
 			document.getElementById(`aseo${day}2`).required = false;
 			document.getElementById(`content-aseo${day}2`).style.display = 'none';
 			document.getElementById(`showAseo${day}2`).style.display = 'inline-block';
+		};
+	};
+});
+
+// Botones Mostar Campus De Ujier
+showButton.forEach(day => {
+	document.getElementById(`showUjier${day}2`).onclick = () => {
+		document.getElementById(`showUjier${day}2`).style.display = 'none';
+		document.getElementById(`ujier${day}2`).required = true;
+		document.getElementById(`content-ujier${day}2`).style.display = 'inline-block';
+		document.getElementById(`hiddenUjier${day}2`).onclick = () => {
+			document.getElementById(`ujier${day}2`).required = false;
+			document.getElementById(`content-ujier${day}2`).style.display = 'none';
+			document.getElementById(`showUjier${day}2`).style.display = 'inline-block';
 		}
-	}
-))
-
-// Botones de Aseo
-// document.getElementById('showAseoMar2').onclick = function() {
-// 	document.getElementById('content-aseoMar2').style.display = 'inline-block';
-// 	document.getElementById('aseoMar2').required = true;
-// 	document.getElementById('showAseoMar2').style.display = 'none';
-// 	document.getElementById('hiddenAseoMar2').onclick = function () {
-// 		document.getElementById('content-aseoMar2').style.display = 'none';
-// 		document.getElementById('aseoMar2').required = false;
-// 		document.getElementById('showAseoMar2').style.display = 'inline-block';
-// 	}
-// }
-// document.getElementById('showAseoJue2').onclick = function() {
-// 	document.getElementById('content-aseoJue2').style.display = 'inline-block';
-// 	document.getElementById('aseoJue2').required = true;
-// 	document.getElementById('showAseoJue2').style.display = 'none';
-// 	document.getElementById('hiddenAseoJue2').onclick = function () {
-// 		document.getElementById('content-aseoJue2').style.display = 'none';
-// 		document.getElementById('aseoJue2').required = false;
-// 		document.getElementById('showAseoJue2').style.display = 'inline-block';
-// 	}
-// }
-// document.getElementById('showAseoSab2').onclick = function() {
-// 	document.getElementById('content-aseoSab2').style.display = 'inline-block';
-// 	document.getElementById('aseoSab2').required = true;
-// 	document.getElementById('showAseoSab2').style.display = 'none';
-// 	document.getElementById('hiddenAseoSab2').onclick = function () {
-// 		document.getElementById('content-aseoSab2').style.display = 'none';
-// 		document.getElementById('aseoSab2').required = false;
-// 		document.getElementById('showAseoSab2').style.display = 'inline-block';
-// 	}
-// }
-// document.getElementById('showAseoDom2').onclick = function() {
-// 	document.getElementById('content-aseoDom2').style.display = 'inline-block';
-// 	document.getElementById('aseoDom2').required = true;
-// 	document.getElementById('showAseoDom2').style.display = 'none';
-// 	document.getElementById('hiddenAseoDom2').onclick = function () {
-// 		document.getElementById('content-aseoDom2').style.display = 'none';
-// 		document.getElementById('aseoDom2').required = false;
-// 		document.getElementById('showAseoDom2').style.display = 'inline-block';
-// 	}
-// }
-
-// Botones de Ujier
-document.getElementById('showUjierMar2').onclick = function() {
-	document.getElementById('content-ujierMar2').style.display = 'inline-block';
-	document.getElementById('ujierMar2').required = true;
-	document.getElementById('showUjierMar2').style.display = 'none';
-	document.getElementById('hiddenUjierMar2').onclick = function () {
-		document.getElementById('content-ujierMar2').style.display = 'none';
-		document.getElementById('ujierMar2').required = false;
-		document.getElementById('showUjierMar2').style.display = 'inline-block';
-	}
-}
-document.getElementById('showUjierJue2').onclick = function() {
-	document.getElementById('content-ujierJue2').style.display = 'inline-block';
-	document.getElementById('ujierJue2').required = true;
-	document.getElementById('showUjierJue2').style.display = 'none';
-	document.getElementById('hiddenUjierJue2').onclick = function () {
-		document.getElementById('content-ujierJue2').style.display = 'none';
-		document.getElementById('ujierJue2').required = false;
-		document.getElementById('showUjierJue2').style.display = 'inline-block';
-	}
-}
-document.getElementById('showUjierSab2').onclick = function() {
-	document.getElementById('content-ujierSab2').style.display = 'inline-block';
-	document.getElementById('ujierSab2').required = true;
-	document.getElementById('showUjierSab2').style.display = 'none';
-	document.getElementById('hiddenUjierSab2').onclick = function () {
-		document.getElementById('content-ujierSab2').style.display = 'none';
-		document.getElementById('ujierSab2').required = false;
-		document.getElementById('showUjierSab2').style.display = 'inline-block';
-	}
-}
-document.getElementById('showUjierDom2').onclick = function() {
-	document.getElementById('content-ujierDom2').style.display = 'inline-block';
-	document.getElementById('ujierDom2').required = true;
-	document.getElementById('showUjierDom2').style.display = 'none';
-	document.getElementById('hiddenUjierDom2').onclick = function () {
-		document.getElementById('content-ujierDom2').style.display = 'none';
-		document.getElementById('ujierDom2').required = false;
-		document.getElementById('showUjierDom2').style.display = 'inline-block';
-	}
-}
+	};
+})
 
 // Función Enviar
 document.getElementById('enviar').addEventListener('click', function() {
