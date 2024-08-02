@@ -47,8 +47,7 @@ document.getElementById('enviar').addEventListener('click', function() {
     };
 
 	// Inputs De Aseo
-    const daysService = ['Mar', 'Jue', 'Sab', 'Dom']
-	daysService.reduce((acc, day) => {
+    const aseo = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
 		const value = document.getElementById(`aseo${day}`).value;
         const value2 = document.getElementById(`aseo${day}2`).value;
         const contentDisplay = document.getElementById(`content-aseo${day}2`).style.display;
@@ -60,7 +59,7 @@ document.getElementById('enviar').addEventListener('click', function() {
     }, '');
 	
 	// Inputs De Ujier
-    daysService.reduce((acc, day) => {
+    const ujier = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
         const value = document.getElementById(`ujier${day}`).value;
         const value2 = document.getElementById(`ujier${day}2`).value;
         const contentDisplay = document.getElementById(`content-ujier${day}2`).style.display;
