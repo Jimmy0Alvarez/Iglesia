@@ -51,9 +51,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 	// Inputs De Aseo
     const aseo = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
 		const value = document.getElementById(`aseo${day}`).value;
+		acc += `%0A-%20*${day}.*%20${value}`;
 		const value2 = document.getElementById(`aseo${day}2`).value;
 		const contentDisplay = document.getElementById(`content-aseo${day}2`).style.display;
-		acc += `%0A-%20*${day}%20${value}`;
 		if (value2 !== '' && contentDisplay === 'inline-block') {
 			acc += `%0A-%20${value2}`;
 		}
@@ -63,9 +63,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 	// Inputs De Ujier
     const ujier = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
         const value = document.getElementById(`ujier${day}`).value;
+		acc += `%0A-%20*${day}.*%20${value}`;
         const value2 = document.getElementById(`ujier${day}2`).value;
         const contentDisplay = document.getElementById(`content-ujier${day}2`).style.display;
-		acc += `%0A-%20*${day}*%20${value}`;
         if (value2 !== '' && contentDisplay === 'inline-block') {
 			acc += `%0A-%20${value2}`;
         }
