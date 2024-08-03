@@ -30,7 +30,9 @@ showButton.forEach(day => {
 })
 
 // Función Enviar
-document.getElementById('enviar').addEventListener('click', function() {
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    // alert('hola');
+    event.preventDefault();
     //Fecha del Martes, Jueves, Sabado y domingo
     const dates = {
         Mar: new Date(document.getElementById('dateMar').value),
@@ -49,11 +51,11 @@ document.getElementById('enviar').addEventListener('click', function() {
 	// Inputs De Aseo
     const aseo = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
 		const value = document.getElementById(`aseo${day}`).value;
-		acc += `%A0-%20*${day}%20${value}`;
 		const value2 = document.getElementById(`aseo${day}2`).value;
 		const contentDisplay = document.getElementById(`content-aseo${day}2`).style.display;
+		acc += `%0A-%20*${day}%20${value}`;
 		if (value2 !== '' && contentDisplay === 'inline-block') {
-			acc += `%A0-%20${value2}`;
+			acc += `%0A-%20${value2}`;
 		}
 		return acc;
 	}, '');
@@ -61,9 +63,9 @@ document.getElementById('enviar').addEventListener('click', function() {
 	// Inputs De Ujier
     const ujier = ['Mar', 'Jue', 'Sab', 'Dom'].reduce((acc, day) => {
         const value = document.getElementById(`ujier${day}`).value;
-		acc += `%0A-%20*${day}*%20${value}`;
         const value2 = document.getElementById(`ujier${day}2`).value;
         const contentDisplay = document.getElementById(`content-ujier${day}2`).style.display;
+		acc += `%0A-%20*${day}*%20${value}`;
         if (value2 !== '' && contentDisplay === 'inline-block') {
 			acc += `%0A-%20${value2}`;
         }
@@ -71,5 +73,7 @@ document.getElementById('enviar').addEventListener('click', function() {
     }, '');
 
 	// Redirecionando
+  if(myForm.checkValidity()){
     window.open(`https://api.whatsapp.com/send/?text=*ASEO%20Y%20UJIER*%0A%0A\`Para%20los%20d%C3%ADas:\`%0A-%20Martes%20${days.Mar}%0A-%20Jueves%20${days.Jue}%0A-%20S%C3%A1bado%20${days.Sab}%0A-%20Domingo%20${days.Dom}%0A%0A\`Aseo:\`${aseo}%0A%0A\`Ujier:\`${ujier}`);
+  }
 });
