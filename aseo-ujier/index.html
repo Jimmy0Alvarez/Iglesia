@@ -1,704 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no">
-	<title>Aseo y Ugier</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Iglesia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>IEANJESUS LOS BAJOS</h1>
-	<section class="section-content">
-		<h2>ASEO Y UJIER</h2>
-		<form class="myForm" id="myForm">
-			<!-- Días -->
-			<Section>
-				<h2>Para los días:</h2>
-				<div class="content-input">
-					<label for="dateMar">
-						Martes:
-						<br>
-						<input type="date" id="dateMar" required>
-					</label>
-				</div>
-				<div class="content-input">
-					<label for="dateJue">
-						Jueves:
-						<br>
-						<input type="date" id="dateJue" required>
-					</label>
-				</div>
-				<div class="content-input">
-					<label for="dateSab">
-						Sábado:
-						<br>
-						<input type="date" id="dateSab" required>
-					</label>
-				</div>
-				<div class="content-input">
-					<label for="dateDom">
-						Domingo:
-						<br>
-						<input type="date" id="dateDom" required>
-					</label>
-				</div>
-			</Section>
-			<!-- Aseo -->
-			<section>
-				<hr>
-				<h3>Aseo:</h3>
-				<div class="content-input">
-					<div>
-						<label for="aseoMar">
-							Martes:
-							<br>
-							<select name="aseoMar" id="aseoMar" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showAseoMar2">+</button>
-					</div>
-					<div class="content-2" id="content-aseoMar2">
-						<label for="aseoMar2">
-							<select name="aseoMar2" id="aseoMar2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenAseoMar2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="aseoJue">
-							Jueves:
-							<br>
-							<select name="aseoJue" id="aseoJue" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showAseoJue2">+</button>
-					</div>
-					<div class="content-2" id="content-aseoJue2">
-						<label for="aseoJue2">
-							<select name="aseoJue2" id="aseoJue2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenAseoJue2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="aseoSab">
-							Sábado:
-							<br>
-							<select name="aseoSab" id="aseoSab" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showAseoSab2">+</button>
-					</div>
-					<div class="content-2" id="content-aseoSab2">
-						<label for="aseoSab2">
-							<select name="aseoSab2" id="aseoSab2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenAseoSab2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="aseoDom">
-							Domingo:
-							<br>
-							<select name="aseoDom" id="aseoDom" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showAseoDom2">+</button>
-					</div>
-					<div class="content-2" id="content-aseoDom2">
-						<label for="aseoDom2">
-							<select name="aseoDom2" id="aseoDom2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenAseoDom2">-</button>
-					</div>
-				</div>
-			</section>
-			<!-- Ujier -->
-			<section>
-				<hr>
-				<h3>Ujier:</h3>
-				<div class="content-input">
-					<div>
-						<label for="ujierMar">
-							Martes:
-							<br>
-							<select name="ujierMar" id="ujierMar" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showUjierMar2">+</button>
-					</div>
-					<div class="content-2" id="content-ujierMar2">
-						<label for="ujierMar2">
-							<select name="ujierMar2" id="ujierMar2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenUjierMar2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="ujierJue">
-							Jueves:
-							<br>
-							<select name="ujierJue" id="ujierJue" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showUjierJue2">+</button>
-					</div>
-					<div class="content-2" id="content-ujierJue2">
-						<label for="ujierJue2">
-							<select name="ujierJue2" id="ujierJue2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenUjierJue2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="ujierSab">
-							Sábado:
-							<br>
-							<select name="ujierSab" id="ujierSab" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showUjierSab2">+</button>
-					</div>
-					<div class="content-2" id="content-ujierSab2">
-						<label for="ujierSab2">
-							<select name="ujierSab2" id="ujierSab2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenUjierSab2">-</button>
-					</div>
-				</div>
-				<div class="content-input">
-					<div>
-						<label for="ujierDom">
-							Domingo:
-							<br>
-							<select name="ujierDom" id="ujierDom" required>
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-show" id="showUjierDom2">+</button>
-					</div>
-					<div class="content-2" id="content-ujierDom2">
-						<label for="ujierDom2">
-							<select name="ujierDom2" id="ujierDom2">
-								<!-- Opciones -->
-								<option hidden value="">Selecionar</option>
-								<option value="Comité de Damas">· Comité de Damas</option>
-								<option value="Comité de Junta Local">· Comité de Junta Local</option>
-								<option value="Comité de Jovenes">· Comité de Jovenes</option>
-								<option value="Comité de Misiones">· Comité de Misiones</option>
-								<option value="Ptr. Jimmy Álvarez">Ptr. Jimmy Álvarez</option>
-								<option value="Hno. Javier Álvarez">Hno. Javier Álvarez</option>
-								<option value="Hna. Belgica Ruiz">Hna. Belgica Ruiz</option>
-								<option value="Hno. Pedro Anchundia">Hno. Pedro Anchundia</option>
-								<option value="Hna. Maria Cartagena">Hna. Maria Cartagena</option>
-								<option value="Hno. Jose Anchundia">Hno. Jose Anchundia</option>
-								<option value="Hna. Martha Sornoza">Hna. Martha Sornoza</option>
-								<option value="Hno. Rolando Macías">Hno. Rolando Macías</option>
-								<option value="Hna. Sandy Santana">Hna. Sandy Santana</option>
-								<option value="Hno. Jandry Vera">Hno. Jandry Vera</option>
-								<option value="Hna. Rosita Anchundia Lucas">Hna. Rosita Anchundia Lucas</option>
-								<option value="Hna. Juanita Lucas">Hna. Juanita Lucas</option>
-								<option value="Hno. Oliver Ojeda">Hno. Oliver Ojeda</option>
-								<option value="Hna. Karen Vargas">Hna. Karen Vargas</option>
-								<option value="Hna. Angelita Vélez">Hna. Angelita Vélez</option>
-								<option value="Hna. Eufemia Castro">Hna. Eufemia Castro</option>
-								<option value="Hna. Dayana Santana">Hna. Dayana Santana</option>
-								<option value="Hna. Maria Anchundia">Hna. Maria Anchundia</option>
-								<option value="Hna. Sayra Mantuano">Hna. Sayra Mantuano</option>
-								<option value="Hno. Alex Roldán">Hno. Alex Roldán</option>
-								<option value="Hno. Segundo Anchundia">Hno. Segundo Anchundia</option>
-								<option value="Hno. Rosita Anchundia Posligua">Hno. Rosita Anchundia Posligua</option>
-								<option value="Hno. Danyi Quijije">Hno. Danyi Quijije</option>
-								<option value="Hno. Clarita Ruiz">Hno. Clarita Ruiz</option>
-								<option value="Hno. Luis Delgado">Hno. Luis Delgado</option>
-							</select>
-						</label>
-						<button type="button" class="btn-hidden" id="hiddenUjierDom2">-</button>
-					</div>
-				</div>
-			</section>
-			<!-- Button Enviar -->
-			<div class="content-btn-enviar">
-				<input class="btn-enviar" type="submit" id="button" value="Enviar">
-			</div>
-		</form>
-	</section>
-<script src="script.js"></script>
+
+<form id="formularioIglesia">
+  <!-- Sección 1: Selección de días -->
+  <div class="section" id="section1">
+    <h3>Seleccionar días</h3>
+    <div class="form-group">
+      <label for="martes">Martes:</label>
+      <input type="date" id="martes" name="martes" required>
+    </div>
+    <div class="form-group">
+      <label for="jueves">Jueves:</label>
+      <input type="date" id="jueves" name="jueves" required>
+    </div>
+    <div class="form-group">
+      <label for="sabado">Sábado:</label>
+      <input type="date" id="sabado" name="sabado" required>
+    </div>
+    <div class="form-group">
+      <label for="domingo">Domingo:</label>
+      <input type="date" id="domingo" name="domingo" required>
+    </div>
+    <div class="button-group">
+      <!-- Botón de información (modal) en lugar de "Atrás" -->
+      <button type="button" class="info-button" onclick="abrirModal()">
+        <i>ℹ️</i> Guía
+      </button>
+      <button type="button" onclick="nextSection(1)">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Sección 2: Personas para el aseo -->
+  <div class="section" id="section2" style="display:none;">
+    <h3>Personas para el aseo</h3>
+    <div class="form-group">
+      <label for="aseoMartes">Aseo Martes:</label>
+      <input type="text" id="aseoMartes" name="aseoMartes" required>
+    </div>
+    <div class="form-group">
+      <label for="aseoJueves">Aseo Jueves:</label>
+      <input type="text" id="aseoJueves" name="aseoJueves" required>
+    </div>
+    <div class="form-group">
+      <label for="aseoSabado">Aseo Sábado:</label>
+      <input type="text" id="aseoSabado" name="aseoSabado" required>
+    </div>
+    <div class="form-group">
+      <label for="aseoDomingo">Aseo Domingo:</label>
+      <input type="text" id="aseoDomingo" name="aseoDomingo" required>
+    </div>
+    <div class="button-group">
+      <button type="button" onclick="prevSection(2)">Atrás</button>
+      <button type="button" onclick="nextSection(2)">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Sección 3: Personas para el ujier -->
+  <div class="section" id="section3" style="display:none;">
+    <h3>Personas para el ujier</h3>
+    <div class="form-group">
+      <label for="ujierMartes">Ujier Martes:</label>
+      <input type="text" id="ujierMartes" name="ujierMartes" required>
+    </div>
+    <div class="form-group">
+      <label for="ujierJueves">Ujier Jueves:</label>
+      <input type="text" id="ujierJueves" name="ujierJueves" required>
+    </div>
+    <div class="form-group">
+      <label for="ujierSabado">Ujier Sábado:</label>
+      <input type="text" id="ujierSabado" name="ujierSabado" required>
+    </div>
+    <div class="form-group">
+      <label for="ujierDomingo">Ujier Domingo:</label>
+      <input type="text" id="ujierDomingo" name="ujierDomingo" required>
+    </div>
+    <div class="button-group">
+      <button type="button" onclick="prevSection(3)">Atrás</button>
+      <button type="button" onclick="nextSection(3)">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Resumen final -->
+  <div class="section" id="section4" style="display:none;">
+    <h3>Resumen de selección</h3>
+
+    <h4>Días seleccionados:</h4>
+    <p id="resumenDias"></p>
+
+    <h4>Personas para el aseo:</h4>
+    <p id="resumenAseo"></p>
+
+    <h4>Personas para el ujier:</h4>
+    <p id="resumenUjier"></p>
+
+    <div class="button-group">
+      <button type="button" onclick="prevSection(4)">Atrás</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </div>
+</form>
+
+<!-- Modal (Ventana emergente) -->
+<div id="modalInfo" class="modal">
+  <div class="modal-content">
+    <h3>Guía del formulario</h3>
+    <p>
+      Este formulario tiene cuatro secciones:<br>
+      1. Selección de días.<br>
+      2. Asignación de las personas responsables del aseo.<br>
+      3. Asignación de las personas responsables del ujier.<br>
+      4. Revisión y envío de los datos seleccionados.<br><br>
+      En cada sección debes llenar los campos requeridos y avanzar con el botón "Siguiente". 
+      Puedes retroceder en cualquier momento usando el botón "Atrás" para hacer cambios.
+    </p>
+    <button type="button" onclick="cerrarModal()">Aceptar</button>
+  </div>
+</div>
+
+<script src="auto-fechas.js"></script>
+<script src="modal-gia.js"></script>
+<script src="btn-nex-section.js"></script>
+<script src="btn-prev-section.js"></script>
+<script src="show-resumen.js"></script>
+
 </body>
 </html>
