@@ -4,9 +4,13 @@ html {
 }
 
 body {
-	margin: 0;
+    background: url('fondo.svg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
 	user-select: none;
 }
+
 
 h1 {
 	font-size: 30px;
@@ -20,8 +24,13 @@ h1 {
 	background: #e4f3fd;
 }
 
+h2, h3 {
+	margin-left: 10px;
+}
+
 .section-content {
-	margin: 15px;
+	width: 260px;
+	margin: auto;
 }
 
 .content-input {
@@ -33,7 +42,7 @@ h1 {
 }
 
 input[type="date"] {
-	width: 180px;
+	width: 220px;
 	padding: 8px;
 	font-size: 16px;
 	border: 2px solid #1e6299;
@@ -53,24 +62,25 @@ input[type="date"]:focus {
 }
 
 .content-btn-enviar{
-	margin-top: 20px;
+	margin: 20px 0;
 	text-align: center;
 }
 
 .btn-enviar{
+	margin-bottom: 25px;
 	width: 200px;
 	color: #fff;
 	font-weight: bold;
 	font-size: 16px;
 	padding: 10px 50px;
-	background: rgb(136 187 227);
+	background: rgb(0, 112, 240);
 	outline: none;
 	border: 0;
 	border-radius: 5px;
 }
 
 .btn-enviar:active {
-	background: #5ab4f8;
+	background: #0b8ef1;
 	box-shadow: 0 0 10px #4f94c9;
 }
 
