@@ -1,3 +1,31 @@
+:root {
+	--color-principal: rgba(63, 181, 228, 0.7);
+	--fuente-principal: 'Georgia', serif;
+	--color-botones: #007BFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	/* Color celeste marino con opacidad */
+	background-color: var(--color-principal);
+	font-family: var(--fuente-principal);
+	color: #333;
+	padding: 0 10px;
+}
+.form {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	max-width: 400px;
+	margin: 10px auto;
+}
+
 .form-group {
 	margin-bottom: 15px;
 }
@@ -8,18 +36,23 @@ label {
 	margin-bottom: 5px;
 }
 
-input[type="text"], input[type="date"] {
+input {
 	width: 100%;
 	padding: 8px;
-	border: 1px solid #ccc;
+	border: 2px solid #cccccc95;
 	border-radius: 4px;
 	box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-principal); /* Color celeste medio más opaco al hacer foco */
 }
 
 button {
 	margin-top: 20px;
 	padding: 10px 20px;
-	background-color: #007BFF;
+	background-color: var(--color-botones);
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -27,7 +60,7 @@ button {
 }
 
 button:hover {
-	background-color: #0056b3;
+	background-color: var(--color-botones);
 }
 
 .section {
@@ -68,11 +101,12 @@ button:hover {
 }
 
 .modal-content {
+	margin: 0 10px;
 	background-color: white;
 	padding: 20px;
 	border-radius: 10px;
 	max-width: 400px;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
